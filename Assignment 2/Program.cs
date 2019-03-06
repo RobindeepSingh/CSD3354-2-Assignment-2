@@ -8,11 +8,7 @@ namespace Assignment_2
 {
     class Program
     {
-        static void Main(string[] args)
-        {
-            DelegateExercises a = new DelegateExercises();
-            a.Method2();
-        }
+        
         public class DelegateExercises
         {
             //Name : Robindeep Singh (C0723381)
