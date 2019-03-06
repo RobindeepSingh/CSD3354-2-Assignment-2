@@ -6,9 +6,22 @@ using System.Threading.Tasks;
 
 namespace Assignment_2
 {
-    
+    namespace DelegatesAndEvents
+    {
+        class Program
+        {
+            static void Main(string[] args)
+            {
+                DelegateExercises a = new DelegateExercises();
+                a.Method2();
+            }
+        }
+    }
 
-        public class DelegateExercises
+
+
+
+    public class DelegateExercises
         {
             //Name : Robindeep Singh (C0723381)
             //Name : Gurkirat Singh  (C)731779)
@@ -29,19 +42,7 @@ namespace Assignment_2
 
 
 
-    namespace DelegatesAndEvents
-    {
-        class Program
-        {
-            static void Main(string[] args)
-            {
-                DelegateExercises a = new DelegateExercises();
-                a.Method2();
-            }
-        }
-    }
-
-
+   
 
 
         
