@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace Assignment_2
 {
-    class Program
-    {
-        
+    
+
         public class DelegateExercises
         {
             //Name : Robindeep Singh (C0723381)
@@ -23,10 +22,29 @@ namespace Assignment_2
             public void Method2()
             {
                 MyDelegate myDelegate = new MyDelegate(Method1);
-                myDelegate();
+                myDelegate(50);
             }
         }
-
-
     }
-}
+
+
+
+    namespace DelegatesAndEvents
+    {
+        class Program
+        {
+            static void Main(string[] args)
+            {
+                DelegateExercises a = new DelegateExercises();
+                a.Method2();
+            }
+        }
+    }
+
+
+
+
+        
+
+
+    
