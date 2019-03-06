@@ -14,31 +14,22 @@ public class Program
         Console.ReadLine();
     }
 }
+public delegate void MyDelegate();
+
 public class DelegateExercises
 {
-    public delegate int MyDelegate(int intValue);
-    int Method1(int intMethod1)
-    {
-        return intMethod1 * 4;
-    }
-    int Method2(int intMethod1)
-    {
-        return intMethod1 * 20;
-    }
-    public void Method4(MyDelegate myDelegate)
-    {
-        for (int i = 1; i <= 5; i++)
-            System.Console.Write(myDelegate(i) + " ");
-    }
+    void Method1()
+    
+         {
+            System.Console.WriteLine("Method1");
 
-    public void Method3()
-    {
-        MyDelegate myDelegate = new MyDelegate(Method1);
-        Method4(myDelegate);
-        myDelegate = new MyDelegate(Method2);
-        Method4(myDelegate);
+        }
+        public void Method3()
+        {
+            MyDelegate myDelegate = new MyDelegate(Method1);
+            myDelegate();
+        }
     }
-}
 
 
 
