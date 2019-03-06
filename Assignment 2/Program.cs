@@ -15,6 +15,8 @@ namespace Assignment_2
         }
         public class DelegateExercises
         {
+            //Name : Robindeep Singh (C0723381)
+            //Name : Gurkirat Singh  (C)731779)
             public delegate void MyDelegate();
 
             void Method1()
